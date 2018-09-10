@@ -100,18 +100,22 @@ const cards = document.getElementById("cards-holder");
 const testDiv = document.getElementById("test");
 const links = document.querySelectorAll("#card-trigger li a");
 
+// Event listener on each link to create a Card object
 links.forEach(el => el.addEventListener("click", createCard));
-// list.addEventListener("click", createCard);
 
+//To link listener
 function createCard(e) {
   let postId = e.target.dataset.sku;
-  console.log(postId);
+
+  //   console.log(postId);
   let card = new Card("cards-holder", postId);
   card.render();
 }
 
+//Remove Link selector
 let removeCards = document.getElementById("remover");
 
+// Remove every card on the cards-holder
 removeCards.addEventListener("click", () => {
   cards.innerText = "";
 });
