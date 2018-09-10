@@ -1,0 +1,19 @@
+* {
+  padding: 0;
+  margin: 0; }
+
+.card {
+  background: #c9c4c4;
+  margin: 0.5em auto; }
+
+body {
+  background: #3b3a3a; }
+  body h1,
+  body p {
+    text-align: center;
+    margin: 0 auto; }
+  body div {
+    margin: 0 auto;
+    width: 50%; }
+  body img {
+    width: 100%; }
