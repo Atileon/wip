@@ -1,4 +1,30 @@
 .card {
+  padding: 1em;
   background: $color-alpha;
   margin: 0.5em auto;
+  box-shadow: $main-shadow;
+  border-radius: $main-border-radius;
+  h3.card-title {
+    font-family: $font-title;
+    font-size: 1.7em;
+    text-transform: capitalize;
+    text-align: center;
+  }
+  p.card-body {
+    font-family: $font-parag;
+    padding: 1em;
+    text-align: justify;
+    font-size: 0.9em;
+    letter-spacing: 1px;
+  }
+  .card-delete {
+    background: $btn-cancel;
+    width: 20%;
+    height: 30px;
+    border: none;
+    transition: all 0.2s ease-in-out;
+    &:hover {
+      box-shadow: $main-shadow;
+    }
+  }
 }

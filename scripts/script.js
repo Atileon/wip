@@ -16,6 +16,7 @@ class Card {
     this.$card = "card";
     this.$title = "card-title";
     this.$body = "card-body";
+    this.$delBtn = "card-delete";
   }
   /**
    * This method get a response from the API and Renders on DOM
@@ -74,6 +75,7 @@ class Card {
   deleteCard(cardElement) {
     // Delete Card Button element
     let removeCard = document.createElement("button");
+    removeCard.className = this.$delBtn;
     removeCard.textContent = `Remove post: ${this.id}`;
     removeCard.addEventListener("click", () => this.cardRemove());
     cardElement.appendChild(removeCard);
